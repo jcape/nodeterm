@@ -1,0 +1,37 @@
+extends layout
+
+block content
+
+  ul#primaryToolbar
+    li.toolbarItem
+      button >
+    li.toolbarItem.toolbarExpand Titlebar
+      ul
+        li.toolbarItem X Terminal 1
+        li.toolbarItem   Terminal 2
+        li.toolbarItem   Terminal 3
+    li.toolbarItem.alignRight
+      button %
+      ul
+        li.toolbarItem System Display
+      button *
+
+//
+  #primaryToolbar
+    button#toggleSidebar.toolbarItem.toolbarButton >
+    details#sysDisplay.toolbarItem
+      summary#sysDisplayExpander Load: 1 5 15 v
+      #sysDisplayDetails
+        hgroup#sysDisplayHeader
+          h1#hostname orwell
+          #sysDisplayHeaderDetails
+            #sysOsType Linux x64
+            #sysUptime Alive for 15 days, 2 hours, 24 minutes
+        #sysDisplayTimeSeries
+          figure#loadGraphContainer
+            #loadGraph [Graph goes here]
+            figcaption#loadGraphLabel Load Average
+          figure#memGraphContainer
+            #memGraph [Graph goes here]
+            figcaption#memGraphLabel Memory Usage
+        #sysDisplayDisk Disk usage graphs go here

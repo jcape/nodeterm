@@ -1,0 +1,44 @@
+normal_bg = #ededed
+border_bg = #a7aba7
+highlight_bg = #ffffff
+default_font = normal 11pt 'Cantarell', sans-serif
+toolbar_font = bold 11pt 'Cantarell', sans-serif
+
+column-count(args)
+  -webkit-column-count args
+  -moz-column-count args
+  column-count args
+
+column-rule(args)
+  -webkit-column-rule args
+  -moz-column-rule args
+  column-rule args
+
+border-radius(args)
+  -webkit-border-radius args
+  -moz-border-radius args
+  border-radius args
+
+
+body
+  font default_font
+  margin 0px
+  padding 0px
+
+#primaryToolbar
+  font toolbar_font
+  background-color normal_bg
+  border-bottom 1px solid border_bg
+  position relative
+  width 100%
+  float left
+  margin 0px 0px 10px 0px
+  padding 0px
+  list-style none
+
+.toolbarItem
+  float left
+  position relative
+
+.alignRight
+  float right
